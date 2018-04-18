@@ -23,6 +23,7 @@ namespace grc
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
