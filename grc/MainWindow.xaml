@@ -6,11 +6,13 @@
         xmlns:local="clr-namespace:grc"
         mc:Ignorable="d"
         Title="GRC" Height="599.198" Width="725.401" WindowState="Maximized">
-    <!--DockPanel to layout four text boxes-->
-    <DockPanel>
-        <TextBox DockPanel.Dock="Top">Dock = "Top"</TextBox>
-        <TextBox DockPanel.Dock="Bottom">Dock = "Bottom"</TextBox>
-        <TextBox DockPanel.Dock="Left">Dock = "Left"</TextBox>
-        <TextBox Background="White">This TextBox "fills" the remaining space.</TextBox>
-    </DockPanel>
+    <StackPanel Margin="10">
+        <Label>UserName :</Label>
+        <TextBox></TextBox>
+        <Button>Sign In</Button>
+
+        <Label>Menu n°1</Label>
+        <Label>Menu n°2</Label>
+        <Label>Menu n°3</Label>
+    </StackPanel>
 </Window>
