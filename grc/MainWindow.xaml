@@ -6,13 +6,20 @@
         xmlns:local="clr-namespace:grc"
         mc:Ignorable="d"
         Title="GRC" Height="599.198" Width="725.401" WindowState="Maximized">
-    <StackPanel Margin="10">
-        <Label>UserName :</Label>
-        <TextBox></TextBox>
-        <Button>Sign In</Button>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Fichier">
+                <MenuItem Header="_Paramètres" />
+                <Separator />
+                <MenuItem Header="_Quitter" />
+            </MenuItem>
+            <MenuItem Header="_?">
+                <MenuItem Header="_Mise à jour" />
+                <Separator />
+                <MenuItem Header="_A propos..." />
+            </MenuItem>
+        </Menu>
+        <TextBox AcceptsReturn="True" />
+    </DockPanel>
 
-        <Label>Menu n°1</Label>
-        <Label>Menu n°2</Label>
-        <Label>Menu n°3</Label>
-    </StackPanel>
 </Window>
