@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:grc"
         mc:Ignorable="d"
-        Title="GRC" Height="599.198" Width="725.401" WindowState="Maximized">
+        Title="GRC" Height="599.198" Width="775.401" WindowState="Maximized">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Fichier">
-                <MenuItem Header="_Paramètres" />
+                <MenuItem Header="_Paramètres" Click="MenuItem_Setup" />
                 <Separator />
-                <MenuItem Header="_Quitter" />
+                <MenuItem Header="_Quitter" Click="MenuItem_Quit" />
             </MenuItem>
             <MenuItem Header="_?">
                 <MenuItem Header="_Mise à jour" />
@@ -19,7 +19,15 @@
                 <MenuItem Header="_A propos..." />
             </MenuItem>
         </Menu>
-        <TextBox AcceptsReturn="True" />
+        <ToolBarTray Orientation="Vertical">
+        <ToolBar DockPanel.Dock="Left" Width="150">
+            <Button Command="New" Content="New" />
+            <Button Command="Open" Content="Open" />
+            <Button Command="Save" Content="Save" />
+        </ToolBar>
+        </ToolBarTray>
+        <TextBox DockPanel.Dock="Left" AcceptsReturn="True" Width="150" MaxWidth="150"/>
+        <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />
     </DockPanel>
 
 </Window>

@@ -25,5 +25,15 @@ namespace grc
             InitializeComponent();
 
         }
+
+        private void MenuItem_Quit(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void MenuItem_Setup(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("test");
+        }
     }
 }
