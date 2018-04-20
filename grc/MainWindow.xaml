@@ -46,14 +46,19 @@
                 <MenuItem Header="_A propos..." />
             </MenuItem>
         </Menu>
-        <ToolBarTray Orientation="Vertical">
-        <ToolBar DockPanel.Dock="Left" Width="150">
-            <Button Command="New" Content="New" />
-            <Button Command="Open" Content="Open" />
-            <Button Command="Save" Content="Save" />
-        </ToolBar>
-        </ToolBarTray>
-        <TextBox DockPanel.Dock="Left" AcceptsReturn="True" Width="150" MaxWidth="150"/>
+
+        <DockPanel DockPanel.Dock="left">
+            <Button DockPanel.Dock="top">Ventes</Button>
+            <Button DockPanel.Dock="top">Règlements</Button>
+            <Button DockPanel.Dock="top">Achats</Button>
+            <Button DockPanel.Dock="top">Stocks / Articles</Button>
+            <Button DockPanel.Dock="top">Opérations</Button>
+            <!--<TextBox DockPanel.Dock="Top" AcceptsReturn="True" Width="150" MaxWidth="150" Height="200"/>-->
+            <TextBox Height="200" DockPanel.Dock="Bottom" AcceptsReturn="True" Width="150" MaxWidth="150">TEXTE ICI</TextBox>
+        </DockPanel>
+        
+        
+        
         <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />
     </DockPanel>
 
