@@ -45,14 +45,18 @@
             </MenuItem>
         </Menu>
 
-        <DockPanel DockPanel.Dock="left" HorizontalAlignment="Left">
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Ventes</Button>
+        <DockPanel Width="150" DockPanel.Dock="left" HorizontalAlignment="Left">
+            <Button x:Name="BtnVentes" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Ventes">Ventes</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Règlements</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Achats</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Stocks / Articles</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Opérations</Button>
 
-            <TextBox Height="200" DockPanel.Dock="Bottom" AcceptsReturn="True" Width="150" MaxWidth="150">TEXTE ICI</TextBox>
+            <Label x:Name="LblVentesFactures" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand" >Factures</Label>
+            <Label x:Name="LblVentesTickets" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Tickets</Label>
+            <Label x:Name="LblVentesDevis" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Devis</Label>
+            <Label x:Name="LblVentesReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
+            <Label x:Name="LblVentesClients" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Clients</Label>
         </DockPanel>
         
         <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />

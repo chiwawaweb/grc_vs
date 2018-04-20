@@ -36,6 +36,22 @@ namespace grc
             MessageBox.Show("setup");
         }
 
+        private void MenuItem_Ventes(object sender, RoutedEventArgs e)
+        {
+            MenuItem_HideAll();
+            LblVentesFactures.Visibility = Visibility.Visible;
+            LblVentesDevis.Visibility = Visibility.Visible;
+            LblVentesTickets.Visibility = Visibility.Visible;
+            LblVentesClients.Visibility = Visibility.Visible;
+            LblVentesReglements.Visibility = Visibility.Visible;
+        }
+
+        private void MenuItem_HideAll()
+        {
+            LblVentesDevis.Visibility = Visibility.Collapsed;
+            LblVentesFactures.Visibility = Visibility.Collapsed;
+            LblVentesTickets.Visibility = Visibility.Collapsed;
+        }
 
     }
 }
