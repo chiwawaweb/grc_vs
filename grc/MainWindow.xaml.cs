@@ -46,11 +46,38 @@ namespace grc
             LblVentesReglements.Visibility = Visibility.Visible;
         }
 
+        private void MenuItem_Achats(object sender, RoutedEventArgs e)
+        {
+            MenuItem_HideAll();
+            LblAchatsFournisseurs.Visibility = Visibility.Visible;
+            LblAchatsFactures.Visibility = Visibility.Visible;
+            LblAchatsReglements.Visibility = Visibility.Visible;
+        }
+
+        private void MenuItem_Reglements(object sender, RoutedEventArgs e)
+        {
+            MenuItem_HideAll();
+        }
+
+        private void MenuItem_Stocks(object sender, RoutedEventArgs e)
+        {
+            MenuItem_HideAll();
+        }
+
         private void MenuItem_HideAll()
         {
             LblVentesDevis.Visibility = Visibility.Collapsed;
             LblVentesFactures.Visibility = Visibility.Collapsed;
             LblVentesTickets.Visibility = Visibility.Collapsed;
+            LblVentesReglements.Visibility = Visibility.Collapsed;
+            LblVentesClients.Visibility = Visibility.Collapsed;
+
+            LblAchatsFactures.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseurs.Visibility = Visibility.Collapsed;
+            LblAchatsReglements.Visibility = Visibility.Collapsed;
+
+            LblArticlesArticles.Visibility = Visibility.Collapsed;
+            LblArticlesEntrees.Visibility = Visibility.Collapsed;
         }
 
     }

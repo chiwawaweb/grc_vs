@@ -47,16 +47,29 @@
 
         <DockPanel Width="150" DockPanel.Dock="left" HorizontalAlignment="Left">
             <Button x:Name="BtnVentes" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Ventes">Ventes</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Règlements</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Achats</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Stocks / Articles</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Opérations</Button>
+            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Reglements">Règlements</Button>
+            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Achats">Achats</Button>
+            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Stocks">Stocks / Articles</Button>
 
+            <Label x:Name="LblVentesDevis" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Devis</Label>
             <Label x:Name="LblVentesFactures" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand" >Factures</Label>
             <Label x:Name="LblVentesTickets" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Tickets</Label>
-            <Label x:Name="LblVentesDevis" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Devis</Label>
             <Label x:Name="LblVentesReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
             <Label x:Name="LblVentesClients" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Clients</Label>
+
+            <Label x:Name="LblAchatsFournisseurs" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Fournisseurs</Label>
+            <Label x:Name="LblAchatsFactures" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Factures</Label>
+            <Label x:Name="LblAchatsReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
+
+            <Label x:Name="LblArticlesArticles" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Articles</Label>
+            <Label x:Name="LblArticlesEntrees" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Entrées en stock</Label>
+            <Label x:Name="LblArticlesSorties" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Sorties de stock</Label>
+            <Label x:Name="LblArticlesMouvements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Mouvements de stock</Label>
+            <Label x:Name="LblArticlesStatistiques" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Statistiques</Label>
+
+
+
+
         </DockPanel>
         
         <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />
