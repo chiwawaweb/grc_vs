@@ -13,6 +13,33 @@
                 <Separator />
                 <MenuItem Header="_Quitter" Click="MenuItem_Quit" />
             </MenuItem>
+            <MenuItem Header="_Ventes">
+                <MenuItem Header="_Devis"  />
+                <MenuItem Header="_Factures"  />
+                <MenuItem Header="_Règlements"  />
+                <MenuItem Header="_Tickets" />
+                <Separator />
+                <MenuItem Header="_Clients" />
+
+            </MenuItem>
+            <MenuItem Header="_Stock">
+                <MenuItem Header="_Articles"  />
+                <MenuItem Header="_Mouvements de stock"  />
+                <MenuItem Header="_Statistiques"  />
+                <MenuItem Header="_Tickets" />
+                <Separator />
+                <MenuItem Header="_Clients" />
+
+            </MenuItem>
+            <MenuItem Header="_Achats">
+                <MenuItem Header="_Factures"  />
+                <MenuItem Header="_Règlements"  />
+                <MenuItem Header="_Statistiques"  />
+                <MenuItem Header="_Tickets" />
+                <Separator />
+                <MenuItem Header="_Fournisseurs" />
+
+            </MenuItem>
             <MenuItem Header="_?">
                 <MenuItem Header="_Mise à jour" />
                 <Separator />

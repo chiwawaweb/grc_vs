@@ -33,7 +33,9 @@ namespace grc
 
         private void MenuItem_Setup(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("test");
+            MessageBox.Show("setup");
         }
+
+
     }
 }
