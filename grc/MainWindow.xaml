@@ -51,11 +51,9 @@
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Achats</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Stocks / Articles</Button>
             <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left">Opérations</Button>
-            <!--<TextBox DockPanel.Dock="Top" AcceptsReturn="True" Width="150" MaxWidth="150" Height="200"/>-->
+
             <TextBox Height="200" DockPanel.Dock="Bottom" AcceptsReturn="True" Width="150" MaxWidth="150">TEXTE ICI</TextBox>
         </DockPanel>
-        
-        
         
         <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />
     </DockPanel>
