@@ -49,7 +49,15 @@ namespace grc
             LblVentesDocumentsFactures.Visibility = Visibility.Visible;
             LblVentesDocumentsReglements.Visibility = Visibility.Visible;
             LblVentesDocumentsTickets.Visibility = Visibility.Visible;
+
             LblVentesClients.Visibility = Visibility.Visible;
+            LblVentesClientsProspects.Visibility = Visibility.Visible;
+            LblVentesClientsClients.Visibility = Visibility.Visible;
+            LblVentesClientsContacts.Visibility = Visibility.Visible;
+            LblVentesClientsFamilles.Visibility = Visibility.Visible;
+            LblVentesClientsSFamilles.Visibility = Visibility.Visible;
+            LblVentesClientsHistorique.Visibility = Visibility.Visible;
+            LblVentesClientsStatistiques.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Achats(object sender, RoutedEventArgs e)
