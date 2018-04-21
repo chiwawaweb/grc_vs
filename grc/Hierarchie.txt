@@ -1,0 +1,73 @@
+﻿Ventes
+	Documents de ventes
+		Devis
+		Commandes
+		Factures
+		Règlements
+		---
+		Tickets
+		---
+		Clients
+	Clients
+		Prospects
+		Clients
+		Contacts
+		Familles clients/prospects
+		Sous-familles clients/prospects
+		Historique clients/articles
+		Statistiques
+	Règlements
+		Echéanciers
+		Règlements
+
+
+Règlements
+	Clients
+		Echeancier
+		Règlements
+	Fournisseurs
+		Echeancier
+		Règlements
+
+
+Achats
+	Documents d'achat
+		Demandes de prix
+		Commandes
+		Bons de réception
+		Bons de retour
+		Factures
+		Avoirs
+		Factures d'acomptes
+		Avoirs d'acomptes
+	Fournisseurs
+		Fournisseurs
+		Contacts
+		Familles fournisseurs
+		Sous-familles fournisseurs
+		Historique fournisseurs/articles
+		Statistiques
+	Règlements
+		Echéancier
+		Règlements
+		Décaissements
+
+
+Stocks / Articles
+	Documents de stock
+		Bons d'entrée
+		Bons de sortie
+		Inventaires
+	Articles
+		Articles
+		Familles d'articles
+		Sous-familles d'articles
+		Statistiques
+		Historique clients/articles
+		Historique fournisseurs/articles
+	Tarifs clients
+		Tarifs et promotions clients
+		Catégories tarifaires clients
+	Tarifs fournisseurs
+		Tarifs et promotions fournisseurs
+		Catégories tarifaires fournisseurs

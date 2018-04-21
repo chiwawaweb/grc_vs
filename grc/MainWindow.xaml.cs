@@ -39,11 +39,13 @@ namespace grc
         private void MenuItem_Ventes(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
-            LblVentesFactures.Visibility = Visibility.Visible;
+            BtnVentes.Background = Brushes.Cyan;
             LblVentesDevis.Visibility = Visibility.Visible;
+            LblVentesCommandes.Visibility = Visibility.Visible;
+            LblVentesFactures.Visibility = Visibility.Visible;
+            LblVentesReglements.Visibility = Visibility.Visible;
             LblVentesTickets.Visibility = Visibility.Visible;
             LblVentesClients.Visibility = Visibility.Visible;
-            LblVentesReglements.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Achats(object sender, RoutedEventArgs e)
@@ -57,6 +59,8 @@ namespace grc
         private void MenuItem_Reglements(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
+            LblReglementsClients.Visibility = Visibility.Visible;
+            LblReglementsClientsEcheancier.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Stocks(object sender, RoutedEventArgs e)
@@ -66,11 +70,25 @@ namespace grc
 
         private void MenuItem_HideAll()
         {
+            /* Couleur de fond originale de tous les boutons */
+            BtnVentes.ClearValue(Button.BackgroundProperty);
+            BtnReglements.ClearValue(Button.BackgroundProperty);
+            BtnAchats.ClearValue(Button.BackgroundProperty);
+            BtnArticles.ClearValue(Button.BackgroundProperty);
+
             LblVentesDevis.Visibility = Visibility.Collapsed;
+            LblVentesCommandes.Visibility = Visibility.Collapsed;
             LblVentesFactures.Visibility = Visibility.Collapsed;
-            LblVentesTickets.Visibility = Visibility.Collapsed;
             LblVentesReglements.Visibility = Visibility.Collapsed;
+            LblVentesTickets.Visibility = Visibility.Collapsed;
             LblVentesClients.Visibility = Visibility.Collapsed;
+
+            LblReglementsClients.Visibility = Visibility.Collapsed;
+            LblReglementsClientsEcheancier.Visibility = Visibility.Collapsed;
+            LblReglementsClientsReglements.Visibility = Visibility.Collapsed;
+            LblReglementsFournisseurs.Visibility = Visibility.Collapsed;
+            LblReglementsFournisseursEcheancier.Visibility = Visibility.Collapsed;
+            LblReglementsFournisseursReglements.Visibility = Visibility.Collapsed;
 
             LblAchatsFactures.Visibility = Visibility.Collapsed;
             LblAchatsFournisseurs.Visibility = Visibility.Collapsed;

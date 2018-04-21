@@ -19,8 +19,10 @@
             </MenuItem>
             <MenuItem Header="_Ventes">
                 <MenuItem Header="_Devis"  />
+                <MenuItem Header="_Commandes"  />
                 <MenuItem Header="_Factures"  />
                 <MenuItem Header="_Règlements"  />
+                <Separator />
                 <MenuItem Header="_Tickets" />
                 <Separator />
                 <MenuItem Header="_Clients" />
@@ -47,32 +49,47 @@
 
         <DockPanel Width="150" DockPanel.Dock="left" HorizontalAlignment="Left">
             <Button x:Name="BtnVentes" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Ventes">Ventes</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Reglements">Règlements</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Achats">Achats</Button>
-            <Button DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Stocks">Stocks / Articles</Button>
+            <Button x:Name="BtnReglements" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Reglements">Règlements</Button>
+            <Button x:Name="BtnAchats" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Achats">Achats</Button>
+            <Button x:Name="BtnArticles" DockPanel.Dock="top" Padding="7" BorderThickness="0,0,0,1" FontWeight="Bold" Cursor="Hand" HorizontalContentAlignment="Left" Click="MenuItem_Stocks">Stocks / Articles</Button>
+            
+            <!-- Ventes -->
+            <Label x:Name="LblVentesDevis" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Devis</Label>
+            <Label x:Name="LblVentesCommandes" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand" >Commandes</Label>
+            <Label x:Name="LblVentesFactures" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand" >Factures</Label>
+            <Label x:Name="LblVentesReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
+            <Label x:Name="LblVentesTickets" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Tickets</Label>
+            <Label x:Name="LblVentesClients" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Clients</Label>
 
-            <Label x:Name="LblVentesDevis" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Devis</Label>
-            <Label x:Name="LblVentesFactures" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand" >Factures</Label>
-            <Label x:Name="LblVentesTickets" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Tickets</Label>
-            <Label x:Name="LblVentesReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
-            <Label x:Name="LblVentesClients" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Clients</Label>
+            <!-- Règlements -->
+            <Label x:Name="LblReglementsClients" DockPanel.Dock="Top" Padding="5,5" FontWeight="Bold">Clients</Label>
+            <Label x:Name="LblReglementsClientsEcheancier" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Echéancier</Label>
+            <Label x:Name="LblReglementsClientsReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
+            <Label x:Name="LblReglementsFournisseurs" DockPanel.Dock="Top" Visibility="Collapsed" Padding="5,5" FontWeight="Bold">Fournisseurs</Label>
+            <Label x:Name="LblReglementsFournisseursEcheancier" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Echéancier</Label>
+            <Label x:Name="LblReglementsFournisseursReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
 
+            <!-- Achats -->
             <Label x:Name="LblAchatsFournisseurs" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Fournisseurs</Label>
             <Label x:Name="LblAchatsFactures" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Factures</Label>
             <Label x:Name="LblAchatsReglements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Règlements</Label>
-
+            
+            <!-- Stocks / Articles -->
             <Label x:Name="LblArticlesArticles" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Articles</Label>
             <Label x:Name="LblArticlesEntrees" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Entrées en stock</Label>
             <Label x:Name="LblArticlesSorties" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Sorties de stock</Label>
             <Label x:Name="LblArticlesMouvements" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Mouvements de stock</Label>
             <Label x:Name="LblArticlesStatistiques" DockPanel.Dock="Top" Visibility="Collapsed" Padding="15,5" Cursor="Hand">Statistiques</Label>
+            
+
 
 
 
 
         </DockPanel>
-        
+
         <TextBox DockPanel.Dock="Right" AcceptsReturn="True" />
+
     </DockPanel>
 
 </Window>
