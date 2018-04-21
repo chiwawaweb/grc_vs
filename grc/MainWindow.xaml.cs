@@ -58,12 +58,35 @@ namespace grc
             LblVentesClientsSFamilles.Visibility = Visibility.Visible;
             LblVentesClientsHistorique.Visibility = Visibility.Visible;
             LblVentesClientsStatistiques.Visibility = Visibility.Visible;
+
+            LblVentesReglements.Visibility = Visibility.Visible;
+            LblVentesReglementsEcheancier.Visibility = Visibility.Visible;
+            LblVentesReglementsReglements.Visibility = Visibility.Visible;
+
         }
 
         private void MenuItem_Achats(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
+            LblAchatsDocuments.Visibility = Visibility.Visible;
+            LblAchatsDocumentsDemandes.Visibility = Visibility.Visible;
+            LblAchatsDocumentsCommandes.Visibility = Visibility.Visible;
+            LblAchatsDocumentsReception.Visibility = Visibility.Visible;
+            LblAchatsDocumentsRetour.Visibility = Visibility.Visible;
+            LblAchatsDocumentsFactures.Visibility = Visibility.Visible;
+            LblAchatsDocumentsAvoirs.Visibility = Visibility.Visible;
 
+            LblAchatsFournisseurs.Visibility = Visibility.Visible;
+            LblAchatsFournisseursFournisseurs.Visibility = Visibility.Visible;
+            LblAchatsFournisseursContacts.Visibility = Visibility.Visible;
+            LblAchatsFournisseursFamilles.Visibility = Visibility.Visible;
+            LblAchatsFournisseursSFamilles.Visibility = Visibility.Visible;
+            LblAchatsFournisseursHistorique.Visibility = Visibility.Visible;
+            LblAchatsFournisseursStatistiques.Visibility = Visibility.Visible;
+
+            LblAchatsReglements.Visibility = Visibility.Visible;
+            LblAchatsReglementsEcheancier.Visibility = Visibility.Visible;
+            LblAchatsReglementsReglements.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Reglements(object sender, RoutedEventArgs e)
@@ -71,11 +94,38 @@ namespace grc
             MenuItem_HideAll();
             LblReglementsClients.Visibility = Visibility.Visible;
             LblReglementsClientsEcheancier.Visibility = Visibility.Visible;
+            LblReglementsClientsReglements.Visibility = Visibility.Visible;
+
+            LblReglementsFournisseurs.Visibility = Visibility.Visible;
+            LblReglementsFournisseursEcheancier.Visibility = Visibility.Visible;
+            LblReglementsFournisseursReglements.Visibility = Visibility.Visible;
+
+            
         }
 
         private void MenuItem_Stocks(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
+            LblArticlesDocuments.Visibility = Visibility.Visible;
+            LblArticlesDocumentsEntrees.Visibility = Visibility.Visible;
+            LblArticlesDocumentsSorties.Visibility = Visibility.Visible;
+            LblArticlesDocumentsInventaires.Visibility = Visibility.Visible;
+
+            LblArticlesArticles.Visibility = Visibility.Visible;
+            LblArticlesArticlesArticles.Visibility = Visibility.Visible;
+            LblArticlesArticlesFamilles.Visibility = Visibility.Visible;
+            LblArticlesArticlesSFamilles.Visibility = Visibility.Visible;
+            LblArticlesArticlesStatistiques.Visibility = Visibility.Visible;
+            LblArticlesArticlesHistoriquesClients.Visibility = Visibility.Visible;
+            LblArticlesArticlesHistoriquesFournisseurs.Visibility = Visibility.Visible;
+
+            LblArticlesTarifsClients.Visibility = Visibility.Visible;
+            LblArticlesTarifsClientsTarifsClients.Visibility = Visibility.Visible;
+            LblArticlesTarifsClientsCategories.Visibility = Visibility.Visible;
+
+            LblArticlesTarifsFournisseurs.Visibility = Visibility.Visible;
+            LblArticlesTarifsFournisseursTarifsFournisseurs.Visibility = Visibility.Visible;
+            LblArticlesTarifsFournisseursCategories.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_HideAll()
@@ -157,11 +207,6 @@ namespace grc
             LblArticlesTarifsFournisseurs.Visibility = Visibility.Collapsed;
             LblArticlesTarifsFournisseursTarifsFournisseurs.Visibility = Visibility.Collapsed;
             LblArticlesTarifsFournisseursCategories.Visibility = Visibility.Collapsed;
-
-
-
-
-
         }
 
     }
