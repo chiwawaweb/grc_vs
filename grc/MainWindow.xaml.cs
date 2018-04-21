@@ -20,6 +20,9 @@ namespace grc
     /// </summary>
     public partial class MainWindow : Window
     {
+        SolidColorBrush foreGround = Brushes.White;
+        SolidColorBrush backGround = Brushes.DarkRed;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -41,7 +44,9 @@ namespace grc
         private void MenuItem_Ventes(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
-            BtnVentes.Background = Brushes.Cyan;
+            BtnVentes.Background = backGround;
+            BtnVentes.Foreground = foreGround;
+            
 
             LblVentesDocuments.Visibility = Visibility.Visible;
             LblVentesDocumentsDevis.Visibility = Visibility.Visible;
@@ -62,12 +67,29 @@ namespace grc
             LblVentesReglements.Visibility = Visibility.Visible;
             LblVentesReglementsEcheancier.Visibility = Visibility.Visible;
             LblVentesReglementsReglements.Visibility = Visibility.Visible;
+        }
 
+        private void MenuItem_Reglements(object sender, RoutedEventArgs e)
+        {
+            MenuItem_HideAll();
+            BtnReglements.Background = backGround;
+            BtnReglements.Foreground = foreGround;
+
+            LblReglementsClients.Visibility = Visibility.Visible;
+            LblReglementsClientsEcheancier.Visibility = Visibility.Visible;
+            LblReglementsClientsReglements.Visibility = Visibility.Visible;
+
+            LblReglementsFournisseurs.Visibility = Visibility.Visible;
+            LblReglementsFournisseursEcheancier.Visibility = Visibility.Visible;
+            LblReglementsFournisseursReglements.Visibility = Visibility.Visible;
         }
 
         private void MenuItem_Achats(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
+            BtnAchats.Background = backGround;
+            BtnAchats.Foreground = foreGround;
+
             LblAchatsDocuments.Visibility = Visibility.Visible;
             LblAchatsDocumentsDemandes.Visibility = Visibility.Visible;
             LblAchatsDocumentsCommandes.Visibility = Visibility.Visible;
@@ -89,23 +111,12 @@ namespace grc
             LblAchatsReglementsReglements.Visibility = Visibility.Visible;
         }
 
-        private void MenuItem_Reglements(object sender, RoutedEventArgs e)
-        {
-            MenuItem_HideAll();
-            LblReglementsClients.Visibility = Visibility.Visible;
-            LblReglementsClientsEcheancier.Visibility = Visibility.Visible;
-            LblReglementsClientsReglements.Visibility = Visibility.Visible;
-
-            LblReglementsFournisseurs.Visibility = Visibility.Visible;
-            LblReglementsFournisseursEcheancier.Visibility = Visibility.Visible;
-            LblReglementsFournisseursReglements.Visibility = Visibility.Visible;
-
-            
-        }
-
         private void MenuItem_Stocks(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
+            BtnArticles.Background = backGround;
+            BtnArticles.Foreground = foreGround;
+
             LblArticlesDocuments.Visibility = Visibility.Visible;
             LblArticlesDocumentsEntrees.Visibility = Visibility.Visible;
             LblArticlesDocumentsSorties.Visibility = Visibility.Visible;
@@ -132,9 +143,13 @@ namespace grc
         {
             /* Couleur de fond originale de tous les boutons */
             BtnVentes.ClearValue(Button.BackgroundProperty);
+            BtnVentes.ClearValue(Button.ForegroundProperty);
             BtnReglements.ClearValue(Button.BackgroundProperty);
+            BtnReglements.ClearValue(Button.ForegroundProperty);
             BtnAchats.ClearValue(Button.BackgroundProperty);
+            BtnAchats.ClearValue(Button.ForegroundProperty);
             BtnArticles.ClearValue(Button.BackgroundProperty);
+            BtnArticles.ClearValue(Button.ForegroundProperty);
 
             /* Ventes */
             LblVentesDocuments.Visibility = Visibility.Collapsed;
@@ -208,6 +223,5 @@ namespace grc
             LblArticlesTarifsFournisseursTarifsFournisseurs.Visibility = Visibility.Collapsed;
             LblArticlesTarifsFournisseursCategories.Visibility = Visibility.Collapsed;
         }
-
     }
 }
