@@ -44,7 +44,7 @@ Achats
 		Fournisseurs
 		Contacts
 		Familles fournisseurs
-		Sous-familles fournisseurs
+		Sous-fournisseurs
 		Historique fournisseurs/articles
 		Statistiques
 	Règlements

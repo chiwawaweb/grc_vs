@@ -74,32 +74,57 @@
             <Label x:Name="LblVentesReglementsEcheancier" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Echéancier</Label>
             <Label x:Name="LblVentesReglementsReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
 
-
-
             <!-- Règlements -->
             <Label x:Name="LblReglementsClients" DockPanel.Dock="Top" Padding="5,5" FontWeight="Bold">Clients</Label>
             <Label x:Name="LblReglementsClientsEcheancier" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Echéancier</Label>
             <Label x:Name="LblReglementsClientsReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
+            
             <Label x:Name="LblReglementsFournisseurs" DockPanel.Dock="Top" Padding="5,5" FontWeight="Bold">Fournisseurs</Label>
             <Label x:Name="LblReglementsFournisseursEcheancier" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Echéancier</Label>
             <Label x:Name="LblReglementsFournisseursReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
 
             <!-- Achats -->
-            <Label x:Name="LblAchatsFournisseurs" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Fournisseurs</Label>
-            <Label x:Name="LblAchatsFactures" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Factures</Label>
-            <Label x:Name="LblAchatsReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
-            
+            <Label x:Name="LblAchatsDocuments" DockPanel.Dock="Top" Padding="5,5" FontWeight="Bold">Documents d'achats</Label>
+            <Label x:Name="LblAchatsDocumentsDemandes" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Demandes de prix</Label>
+            <Label x:Name="LblAchatsDocumentsCommandes" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Commandes</Label>
+            <Label x:Name="LblAchatsDocumentsReception" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Bons de réception</Label>
+            <Label x:Name="LblAchatsDocumentsRetour" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Bons de retour</Label>
+            <Label x:Name="LblAchatsDocumentsFactures" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Factures</Label>
+            <Label x:Name="LblAchatsDocumentsAvoirs" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Avoirs</Label>
+
+            <Label x:Name="LblAchatsFournisseurs" DockPanel.Dock="Top" Padding="5,5" FontWeight="Bold">Fournisseurs</Label>
+            <Label x:Name="LblAchatsFournisseursFournisseurs" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Fournisseurs</Label>
+            <Label x:Name="LblAchatsFournisseursContacts" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Contacts</Label>
+            <Label x:Name="LblAchatsFournisseursFamilles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Familles fournisseurs</Label>
+            <Label x:Name="LblAchatsFournisseursSFamilles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Sous-familles fournisseurs</Label>
+            <Label x:Name="LblAchatsFournisseursHistorique" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Historique fournisseurs/articles</Label>
+            <Label x:Name="LblAchatsFournisseursStatistiques" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Statistiques</Label>
+
+            <Label x:Name="LblAchatsReglements" DockPanel.Dock="Top" FontWeight="Bold" Padding="5,5">Règlements</Label>
+            <Label x:Name="LblAchatsReglementsEcheancier" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Echéancier</Label>
+            <Label x:Name="LblAchatsReglementsReglements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Règlements</Label>
+
             <!-- Stocks / Articles -->
-            <Label x:Name="LblArticlesArticles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Articles</Label>
-            <Label x:Name="LblArticlesEntrees" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Entrées en stock</Label>
-            <Label x:Name="LblArticlesSorties" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Sorties de stock</Label>
-            <Label x:Name="LblArticlesMouvements" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Mouvements de stock</Label>
-            <Label x:Name="LblArticlesStatistiques" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Statistiques</Label>
-            
+            <Label x:Name="LblArticlesDocuments" DockPanel.Dock="Top" FontWeight="Bold" Padding="5,5">Documents de stock</Label>
+            <Label x:Name="LblArticlesDocumentsEntrees" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Entrées en stock</Label>
+            <Label x:Name="LblArticlesDocumentsSorties" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Sorties de stock</Label>
+            <Label x:Name="LblArticlesDocumentsInventaires" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Inventaires</Label>
 
+            <Label x:Name="LblArticlesArticles" DockPanel.Dock="Top" FontWeight="Bold" Padding="5,5">Articles</Label>
+            <Label x:Name="LblArticlesArticlesArticles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Articles</Label>
+            <Label x:Name="LblArticlesArticlesFamilles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Familles d'articles</Label>
+            <Label x:Name="LblArticlesArticlesSFamilles" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Sous-familles d'articles</Label>
+            <Label x:Name="LblArticlesArticlesStatistiques" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Statistiques</Label>
+            <Label x:Name="LblArticlesArticlesHistoriquesClients" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Historique clients/articles</Label>
+            <Label x:Name="LblArticlesArticlesHistoriquesFournisseurs" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Historique fournisseurs/articles</Label>
 
+            <Label x:Name="LblArticlesTarifsClients" DockPanel.Dock="Top" FontWeight="Bold" Padding="5,5">Tarifs clients</Label>
+            <Label x:Name="LblArticlesTarifsClientsTarifsClients" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Tarifs et promotions clients</Label>
+            <Label x:Name="LblArticlesTarifsClientsCategories" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Catégories tarifaires clients</Label>
 
-
+            <Label x:Name="LblArticlesTarifsFournisseurs" DockPanel.Dock="Top" FontWeight="Bold" Padding="5,5">Tarifs fournisseurs</Label>
+            <Label x:Name="LblArticlesTarifsFournisseursTarifsFournisseurs" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Tarifs et promotions fournisseurs</Label>
+            <Label x:Name="LblArticlesTarifsFournisseursCategories" DockPanel.Dock="Top" Padding="15,5" Cursor="Hand">Catégories tarifaires fournisseurs</Label>
 
         </DockPanel>
 

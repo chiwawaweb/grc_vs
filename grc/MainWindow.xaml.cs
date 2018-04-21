@@ -55,9 +55,7 @@ namespace grc
         private void MenuItem_Achats(object sender, RoutedEventArgs e)
         {
             MenuItem_HideAll();
-            LblAchatsFournisseurs.Visibility = Visibility.Visible;
-            LblAchatsFactures.Visibility = Visibility.Visible;
-            LblAchatsReglements.Visibility = Visibility.Visible;
+
         }
 
         private void MenuItem_Reglements(object sender, RoutedEventArgs e)
@@ -80,14 +78,28 @@ namespace grc
             BtnAchats.ClearValue(Button.BackgroundProperty);
             BtnArticles.ClearValue(Button.BackgroundProperty);
 
+            /* Ventes */
             LblVentesDocuments.Visibility = Visibility.Collapsed;
             LblVentesDocumentsDevis.Visibility = Visibility.Collapsed;
             LblVentesDocumentsCommandes.Visibility = Visibility.Collapsed;
             LblVentesDocumentsFactures.Visibility = Visibility.Collapsed;
             LblVentesDocumentsReglements.Visibility = Visibility.Collapsed;
             LblVentesDocumentsTickets.Visibility = Visibility.Collapsed;
-            LblVentesClients.Visibility = Visibility.Collapsed;
 
+            LblVentesClients.Visibility = Visibility.Collapsed;
+            LblVentesClientsProspects.Visibility = Visibility.Collapsed;
+            LblVentesClientsClients.Visibility = Visibility.Collapsed;
+            LblVentesClientsContacts.Visibility = Visibility.Collapsed;
+            LblVentesClientsFamilles.Visibility = Visibility.Collapsed;
+            LblVentesClientsSFamilles.Visibility = Visibility.Collapsed;
+            LblVentesClientsHistorique.Visibility = Visibility.Collapsed;
+            LblVentesClientsStatistiques.Visibility = Visibility.Collapsed;
+
+            LblVentesReglements.Visibility = Visibility.Collapsed;
+            LblVentesReglementsEcheancier.Visibility = Visibility.Collapsed;
+            LblVentesReglementsReglements.Visibility = Visibility.Collapsed;
+
+            /* Règlements */
             LblReglementsClients.Visibility = Visibility.Collapsed;
             LblReglementsClientsEcheancier.Visibility = Visibility.Collapsed;
             LblReglementsClientsReglements.Visibility = Visibility.Collapsed;
@@ -95,12 +107,53 @@ namespace grc
             LblReglementsFournisseursEcheancier.Visibility = Visibility.Collapsed;
             LblReglementsFournisseursReglements.Visibility = Visibility.Collapsed;
 
-            LblAchatsFactures.Visibility = Visibility.Collapsed;
+            /* Achats */
+            LblAchatsDocuments.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsDemandes.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsCommandes.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsReception.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsRetour.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsFactures.Visibility = Visibility.Collapsed;
+            LblAchatsDocumentsAvoirs.Visibility = Visibility.Collapsed;
+
             LblAchatsFournisseurs.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursFournisseurs.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursContacts.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursFamilles.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursSFamilles.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursHistorique.Visibility = Visibility.Collapsed;
+            LblAchatsFournisseursStatistiques.Visibility = Visibility.Collapsed;
+
             LblAchatsReglements.Visibility = Visibility.Collapsed;
+            LblAchatsReglementsEcheancier.Visibility = Visibility.Collapsed;
+            LblAchatsReglementsReglements.Visibility = Visibility.Collapsed;
+
+            /* Stocks / Articles */
+            LblArticlesDocuments.Visibility = Visibility.Collapsed;
+            LblArticlesDocumentsEntrees.Visibility = Visibility.Collapsed;
+            LblArticlesDocumentsSorties.Visibility = Visibility.Collapsed;
+            LblArticlesDocumentsInventaires.Visibility = Visibility.Collapsed;
 
             LblArticlesArticles.Visibility = Visibility.Collapsed;
-            LblArticlesEntrees.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesArticles.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesFamilles.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesSFamilles.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesStatistiques.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesHistoriquesClients.Visibility = Visibility.Collapsed;
+            LblArticlesArticlesHistoriquesFournisseurs.Visibility = Visibility.Collapsed;
+
+            LblArticlesTarifsClients.Visibility = Visibility.Collapsed;
+            LblArticlesTarifsClientsTarifsClients.Visibility = Visibility.Collapsed;
+            LblArticlesTarifsClientsCategories.Visibility = Visibility.Collapsed;
+
+            LblArticlesTarifsFournisseurs.Visibility = Visibility.Collapsed;
+            LblArticlesTarifsFournisseursTarifsFournisseurs.Visibility = Visibility.Collapsed;
+            LblArticlesTarifsFournisseursCategories.Visibility = Visibility.Collapsed;
+
+
+
+
+
         }
 
     }
