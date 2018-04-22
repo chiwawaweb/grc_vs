@@ -96,5 +96,8 @@
   <ItemGroup>
     <Resource Include="Hierarchie.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

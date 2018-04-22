@@ -20,8 +20,8 @@ namespace grc
     /// </summary>
     public partial class MainWindow : Window
     {
-        SolidColorBrush foreGround = Brushes.White;
-        SolidColorBrush backGround = Brushes.DarkRed;
+        SolidColorBrush foreGround = Brushes.Black;
+        SolidColorBrush backGround = Brushes.GreenYellow;
 
         public MainWindow()
         {
